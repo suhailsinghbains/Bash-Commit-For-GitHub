@@ -7,6 +7,6 @@ do
     echo ${dateTime}>>log.txt
     echo `git add .`
     echo `git commit -m "Day ${i}" --date="${dateTime}"`
-    i=$(( $i + 1 ))
+    i=$(( $i - 1 ))
 done
 echo `git push origin main --force`
