@@ -1,6 +1,6 @@
 #!/bin/bash
-i=1
-while [ $i -le 10 ]
+i=10
+while [ $i -ge 0 ]
 do
     dateTime=`date -v-${i}d`
     echo ${dateTime}
