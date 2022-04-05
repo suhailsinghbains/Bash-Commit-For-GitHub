@@ -1,12 +1,12 @@
 #!/bin/bash
-x=1
-dateTime=`date`
-echo ${dateTime}
-while [ $x -le 5 ]
+i=1
+while [ $i -le 5 ]
 do
-    date>>log.txt
+    dateTime=`date -v-${i}d`
+    echo ${dateTime}
+    ${dateTime}>>log.txt
     echo `git add .`
     echo `git commit -m "Day ${i}" --date="${dateTime}" `
-    x=$(( $x + 1 ))
+    i=$(( $i + 1 ))
 done
 echo `git push origin main`
