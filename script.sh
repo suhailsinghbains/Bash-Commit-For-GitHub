@@ -9,4 +9,4 @@ do
     echo `git commit -m "Day ${i}" --date="${dateTime}" `
     i=$(( $i + 1 ))
 done
-# echo `git push origin main`
+echo `git push origin main`
