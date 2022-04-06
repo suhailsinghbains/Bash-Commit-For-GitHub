@@ -6,4 +6,4 @@ do
     echo `git commit -m "Day ${i}"`
     x=$(( $x + 1 ))
 done
-echo `git push origin master`
+echo `git push origin main`
