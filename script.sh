@@ -1,6 +1,6 @@
 #!/bin/bash
 i=365
-while [ $i -ge 1 ]
+while [ $i -ge -100 ]
 do
     dateTime=`date +"%Y-%m-%d %H:%M:%S %z" -d "$DATE + $i day"`
     echo ${dateTime}
