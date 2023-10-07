@@ -2,7 +2,7 @@
 i=365
 while [ $i -ge 1 ]
 do
-    dateTime=`date -v-${i}d +"%Y-%m-%d %H:%M:%S %z"`
+    dateTime=`date +"%Y-%m-%d %H:%M:%S %z" -d "$DATE + $i day"`
     echo ${dateTime}
     echo ${dateTime}>>log.txt
     echo `git add .`
